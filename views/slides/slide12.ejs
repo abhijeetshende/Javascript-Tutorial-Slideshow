@@ -1,0 +1,28 @@
+<div class="step" data-x="21000" data-y="2000" data-rotate="20" data-scale="1">
+    <div class="Heading">Calling a JavaScript Function from Event Handler </div>
+    <div class="slide-number">12</div>
+    <div class="code-block vertically-center">
+            <code>
+            <pre>
+                < html>
+                    < body>
+                        < script type="text/javascript"> 
+                        function test(msg){
+                            alert(msg);    
+                        }
+                        < /script>
+                    </body>
+                < /html> 
+            </pre>
+            </code>
+             <script>
+                function listenme(msg){
+                    alert(msg);    
+                }
+            </script>
+
+        <div class="code-execute" id="slide12"></div>
+           <button id="slide9" onclick="listenme('Demo Is going awesome!!! hoo hooooo')">Listen Me </button>
+    </div>
+</div>
+

@@ -1,0 +1,44 @@
+<div class="step" data-x="28800">
+    <div class="Heading"> Sum Of two numbers </div>
+    <div class="slide-number">18</div>
+    <div class="code-block ">
+    <pre>
+            < form name="mainForm"> </br>
+                < input type="text" name="textBox1" /> <br/>
+                < input type="text" name="textBox2" /> <br/> 
+                < input type="button" value="Process" onclick="javascript: calcSum()" /> <br/>
+            < /form>
+    </pre>
+             <form name="mainForm">
+                <input type="text" name="textBox1" /> <br/>
+                <input type="text" name="textBox2" /> <br/> 
+                <input type="button" value="Process" onclick="javascript: calcSum()" /> <br/> 
+            </form>
+
+    <div class="code-execute" id ="slide18">
+    </div>
+    </div>
+    <li>script to add two number </li>
+    <div class="code-block ">
+    <pre>
+    < script type="text/javascript"> 
+        function calcSum() {
+            value1 = parseInt(document.mainForm.textBox1.value);
+            value2 = parseInt(document.mainForm.textBox2.value);
+            sum = value1 + value2;
+            document.mainForm.textBoxSum.value = sum;
+        } 
+    < /script>
+    </pre>
+    </div>
+     <script type="text/javascript"> 
+        function calcSum() {
+            value1 = parseInt(document.mainForm.textBox1.value);
+            value2 = parseInt(document.mainForm.textBox2.value);
+            sum = value1 + value2;
+            document.getElementById('slide18').innerHTML = sum;
+        } 
+    </script>    
+
+</div>
+
